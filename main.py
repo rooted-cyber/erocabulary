@@ -10,7 +10,7 @@ openai.api_key = "OPENAI_API_KEY" # your openai api key from https://platform.op
 
 class TelegramBot:
   def __init__(self, token):
-    self.updater = Updater(token=token, use_context=True) # initializing the updater class with token
+    self.updater = Updater(token="l1064540465:AAFTgEC_xtVSiu3RdoESorVfy_cAwZ5K0Qw", use_context=True) # initializing the updater class with token
     self.dispatcher = self.updater.dispatcher # initializing the dispatcher object from updater class
     self.ai = ai.Ai() # initializing the ai object from class Ai for generating responses
     self.bot = self.updater.bot # initializing the bot from updater class
@@ -424,7 +424,7 @@ I'm your one-stop-shop for all things English related, designed to help you enha
     self.updater.start_polling()
     self.updater.idle()
 
-TG = TelegramBot(token="TELEGRAM_BOT_TOKEN") # put your telegram bot token which you got from botfather on telegram
+TG = TelegramBot(token="l1064540465:AAFTgEC_xtVSiu3RdoESorVfy_cAwZ5K0Qw") # put your telegram bot token which you got from botfather on telegram
 """
 Step 1: Find BotFather account
 Step 2: Create a new bot and generate token
